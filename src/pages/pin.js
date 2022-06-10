@@ -6,7 +6,7 @@ app.set('view-engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 
 router.get('/pin', (req, res) => {
-    res.render('../views/index.ejs')
+    res.render('index.ejs')
 })
 
 router.post('/pin', async(req, res) => {
