@@ -70,6 +70,9 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
   },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
   "scripts": {
     "start": "nodemon ./src/App.js"
   },
