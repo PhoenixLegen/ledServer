@@ -2,10 +2,6 @@ const express = require('express')
 const router = express.Router()
 const app = express()
 
-const { readFileSync } = require('fs')
-
-const users = JSON.parse(readFileSync('/home/sudhir/Documents/ledServer/src/users.json'))
-
 app.set('view-engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 
@@ -17,7 +13,7 @@ router.post('/login', (req, res) => {
     try {
         const email = req.body.email
         const password = req.body.password
-        if (email == users.users.sudhir.email & password == users.users.sudhir.password){
+        if (email == 'sudhircks@gmail.com' & password == 'Sudhir@28'){
             res.redirect('/pin')
         }
         else{
