@@ -7,7 +7,8 @@ const pages = {
     led: require('./pages/led'),
     pinNumber: require('./pages/pinNumber'),
     helloMom: require('./pages/hello'),
-    helloDad: require('./pages/helloDad')
+    helloDad: require('./pages/helloDad'),
+    login: require('./pages/login')
 }
 
 const Gpio = require('ledcontrol')
@@ -30,6 +31,6 @@ app.use('/', pages.led)
 app.use('/', pages.pinNumber)
 app.use('/', pages.helloMom)
 app.use('/', pages.helloDad)
-
+app.use('/', pages.login)
 
 app.listen(port, () => console.log(`Listening on http://localhost:${port}`));

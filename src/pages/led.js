@@ -61,9 +61,9 @@ router.get('/pin/:pin/led', (req, res) => {
         </head>
         <body>
             <h1>RPi led server</h1>
-            <p> <button class="on" onclick="window.location='http://${ipaddr}:${port}/pin/${pin}/led?state=on';" value="click here" width="40px" >on</button>   <button class="off" onclick="window.location='http://${ipaddr}:${port}/pin/${pin}/led?state=off';" value="click here" width="40px" >off</button></p>
+            <p> <button class="on" onclick="window.location='/pin/${pin}/led?state=on';" value="click here" width="40px" >on</button>   <button class="off" onclick="window.location='/pin/${pin}/led?state=off';" value="click here" width="40px" >off</button></p>
             <h3>led is ${readStateWeb(state)}</h3>
-            <p><a href="http://${ipaddr}:${port}/">return to home</a></p>
+            <p><a href="/">return to home</a></p>
         </body>
         </html>
     `);

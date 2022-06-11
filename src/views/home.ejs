@@ -1,0 +1,37 @@
+<style>
+    .led {
+    background-color: rgba(255, 255, 0, 0.932); /* Green */
+    border: none;
+    color: rgb(255, 0, 0);
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    .hello {
+    background-color: rgb(0, 252, 34); /* Green */
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    </style>
+
+<h1>RPi led server</h1>
+<div> 
+    <button class="led" onclick="window.location='/pin';" value="click here" width="40px" >led</button>
+</div>
+<div>
+    <button class="hello" onclick="window.location='/helloMom';" value="click here" width="40px" >hello mom</button> 
+</div>
+<div>
+    <button class="hello" onclick="window.location='/helloDad';" value="click here">hello Dad</button>
+</div>
